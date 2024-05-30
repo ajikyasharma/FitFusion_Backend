@@ -22,6 +22,10 @@ connectDB();
 // });
 
 app.use(routes);
+app.get('/', (req, res)=>{
+    res.send("hello ji")
+})
+
 
 // db.once("open", () => {
 //   app.listen(PORT, () => {
